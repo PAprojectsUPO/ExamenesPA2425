@@ -1,0 +1,128 @@
+/* 1 Selector: Cabecera */
+selector{ // Esto es un ejemplo - Cambiar
+/* 2 Definir el color de fondo del encabezado a rgb(0, 119, 204) */
+propiedad: valor // Esto es un ejemplo - Cambiar
+/* 3 Establecer el espacio interno a 10 unidades fijas */
+propiedad: valor // Esto es un ejemplo - Cambiar
+/* 4 Definir el color del texto del encabezado a #fff */
+propiedad: valor // Esto es un ejemplo - Cambiar
+/* 5 Centrar el texto */
+propiedad: valor // Esto es un ejemplo - Cambiar
+/* 6 Establecer la posición relativa de la cabecera */
+propiedad: valor // Esto es un ejemplo - Cambiar
+}
+/* 7 Selector: Cuerpo del documento */
+/* 8 Establecer el margen del cuerpo a 20 unidades fijas */
+/* 9 Definir el color de fondo del cuerpo a #f9f9f9 */
+
+/* 10 Selector: Barra de navegación */
+/* 11 Establecer el margen inferior de la barra de navegación a 20 unidades fijas */
+/* 12 Establecer el espacio interno de la barra de navegación a 20 unidades fijas */
+/* 13 Centrar el texto de la barra de navegación */
+/* 14 Definir el color de fondo de la barra de navegación a #f9f9f9 */
+
+/* 15 Selector: Enlaces dentro de la barra de navegación */
+/* 16 Definir el color del texto de los enlaces a #333 */
+/* 17 Eliminar la decoración del texto de los enlaces */
+/* 18 Establecer el espacio interno de los enlaces a 8 unidades fijas de forma vertical y 12 unidades fijas de forma horizontal */
+/* 19 Establecer el margen derecho de los enlaces a 10 unidades fijas */
+/* 20 Definir el radio de las esquinas de los enlaces a 5 unidades fijas */
+/* 21 Definir la posición relativa de los enlaces */
+
+/* 22 Selector: Definir el comportamiento del elemento decorativo posterior al pasar el ratón sobre los enlaces en la cabecera */
+/* 23 Cambiar el color de fondo del enlace a #f9f9f9 al pasar el ratón */
+/* 24 Cambiar el color del texto del enlace a rgb(0, 119, 204) al pasar el ratón */
+
+/* 25 Selector: Encabezados de nivel 2 y 3 */
+/* 26 Definir el color del texto a #333 */
+/* 27 Definir la posición relativa de los encabezados */
+
+/* 28 Selector: Artículos del sitio */
+/* 29 Definir el color de fondo del artículo a #f9f9f9 */
+/* 30 Establecer el espacio interno del artículo a 20 unidades fijas */
+/* 31 Establecer el margen inferior del artículo a 20 unidades fijas */
+/* 32 Definir el borde del artículo con 1 unidad fija y color #ccc */
+/* 33 Definir el radio de las esquinas del artículo a 5 unidades fijas */
+
+/* 34 Selector: Contenedor principal */
+/* 35 Establecer el diseño del contenedor como grid */
+/* 36 Definir las columnas del grid a tres, con un tamaño flexible igual */
+/* 37 Establecer el espacio entre elementos del grid a 20 unidades fijas */
+
+/* 38 Selector: Encabezado de tercer nivel en las columnas */
+/* 39 Definir el color del texto a rgb(0, 119, 204) */
+
+/* 40 Selector: Párrafos dentro de las columnas */
+/* 41 Definir el interlineado de los párrafos a 1.5 */
+
+/* 42 Selector: Figuras */
+/* 43 Centrar el texto dentro de la figura */
+/* 44 Establecer el margen superior e inferior a 20 unidades fijas */
+
+/* 45 Selector: Imágenes */
+/* 46 Asegurar que la imagen no supere el tamaño de su contenedor */
+/* 47 Hacer que la imagen se muestre como un bloque */
+/* 48 Centrar la imagen */
+/* 49 Definir el radio de las esquinas de la imagen a 5 unidades */
+/* 50 Asegurar que el contenido de la imagen cubra el espacio asignado */
+
+/* 51 Selector: Imágenes dentro de figuras */
+/* 52 Definir el ancho máximo de la imagen dentro de una figura a 5 unidades líquidas */
+
+/* 53 Selector: Tabla en la sección de economía */
+/* 54 Establecer el ancho de la tabla al total del contenedor */
+/* 55 Establecer el margen superior de la tabla a 20 unidades fijas */
+/* 56 Evite que los bordes de la tabla creen doble línea */
+
+/* 57 Selector: Estilizar las celdas de encabezado y las celdas de datos de la tabla */
+/* 58 Establecer el espacio interno de las celdas a 12 unidades fijas */
+/* 59 Definir el borde de las celdas con 1 unidad fija, sólido y color #ccc */
+/* 60 Alinear el texto de las celdas a la izquierda */
+
+/* 61 Selector: Encabezado y pie de la tabla */
+/* 62 Definir el color de fondo a #f9f9f9 */
+/* 63 Definir el color del texto a #333 */
+
+/* 64 Selector: Filas pares de la tabla */
+/* 65 Definir el color de fondo de las filas pares a #f1f1f1 */
+
+/* 66 Selector: Filas de la tabla al pasar el ratón */
+/* 67 Cambiar el color de fondo a rgb(0, 119, 204) */
+/* 68 Cambiar el color del texto a #fff */
+----------
+/* 69 Selector: Formulario de contacto */
+/* 70 Establecer el ancho máximo del formulario a 400 unidades fijas */
+/* 71 Centrar el formulario en el contenedor */
+/* 72 Establecer el espacio interno del formulario a 20 unidades fijas */
+/* 73 Definir el color de fondo del formulario a #f9f9f9 */
+/* 74 Definir el borde del formulario con 1 unidad fija, sólido y color #ccc */
+/* 75 Definir el radio de las esquinas del formulario a 5 unidades fijas */
+
+/* 76 Selector: Icono decorativo antes del encabezado */
+/* 77 Añadir un icono usando "\1F4F0" antes del encabezado */
+/* 78 Establecer el tamaño de la fuente a 2 unidades del elemento raíz */
+/* 79 Definir la posición absoluta del icono */
+/* 80 Establecer la posición izquierda del icono a 20 unidades fijas */
+/* 81 Establecer la posición superior al 50% */
+/* 82 Centrar el icono verticalmente usando transformación */
+
+/* 83 Selector: Subrayado animado en enlaces de navegación */
+/* 84 Añadir un contenido vacío para el subrayado */
+/* 85 Definir la posición absoluta del subrayado */
+/* 86 Sin ancho */
+/* 87 Definir la altura del subrayado a 2 unidades fijas */
+/* 88 Establecer la posición inferior del subrayado a 0 */
+/* 89 Establecer la posición izquierda del subrayado a 0 */
+/* 90 Definir el color de fondo del subrayado a rgb(0, 119, 204) */
+
+/* 91 Selector: Cambiar estilos de los enlaces de la cabecera al pasar el ratón */
+/* 92 Expandir el subrayado al 100% */
+
+/* 93 Selector: Agregar una línea decorativa posteriormente a los encabezados de segundo y tercer nivel */
+/* 94 Añadir un contenido vacío para la línea decorativa */
+/* 95 Mostrar la línea decorativa como un bloque */
+/* 96 Establecer el ancho de la línea decorativa a 50 unidades fijas */
+/* 97 Definir la altura de la línea decorativa a 3 unidades fijas */
+/* 98 Definir el color de fondo de la línea decorativa a rgb(0, 119, 204) */
+/* 99 Establecer el margen superior de la línea a 5 unidades fijas */
+/* 100 Definir el radio de las esquinas de la línea a 2 unidades fijas */

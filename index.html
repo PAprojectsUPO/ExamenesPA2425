@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Periódico Digital</title>
+        <style>
+            header::before {
+                content: "\1F4F0";
+                font-size: 2rem;
+                position: absolute;
+                left: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            header {
+                background-color: rgb(0,119,204);
+                padding: 10px;
+                color: #fff;
+                text-align: center;
+                position: relative;
+            }
+
+            body {
+                margin: 20px;
+                background-color: #f9f9f9;
+            }
+
+            .barra_de_navegacion {
+                margin-bottom: 20px;
+                padding: 20px;
+                text-align: center;
+                background-color: #f9f9f9;
+            }
+
+            .barra_de_navegacion ul {
+                display: inline-flex;
+                list-style: none;
+            }
+
+            .barra_de_navegacion a {
+                color: #333;
+                text-decoration: none;
+                padding: 8px 12px;
+                margin-right: 10px;
+                border-radius: 5px;
+                position: relative;
+            }
+
+            .barra_de_navegacion :hover {
+                background-color: #f9f9f9;
+                color: rgb(0,119,204);
+            }
+
+            .barra_de_navegacion a::after {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background-color: rgb(0, 119, 204);
+            }
+
+            .barra_de_navegacion a:hover::after {
+                width: 100%;
+                transition: width 0.3s ease;
+            }
+
+            h2, h3 {
+                color: #333;
+                position: relative;
+            }
+
+            h2::after, h3::after { /*selector que no sabia definir*/
+                content: "";
+                display: block;
+                width: 50px;
+                height: 3px;
+                background-color: rgb(0, 119, 204);
+                margin-top: 5px;
+                border-radius: 2px;
+            }
+
+            section {
+                border-bottom: 2px solid #ccc;
+            }
+
+            article {
+                background-color: #f9f9f9;
+                padding: 20px;
+                margin-bottom: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            .contenedor_principal {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 20px;
+                border-bottom: none;
+            }
+
+            .contenedor_principal article{
+                border: none;
+            }
+
+            .contenedor_principal h3{
+                color: rgb(0, 119, 204);
+            }
+
+            .contenedor_principal p {
+                line-height: 1.5;
+                justify-content: center;
+            }
+
+            figure {
+                text-align: center;
+                margin-top: 20px 0;
+            }
+
+            img {
+                max-width: 100%;
+                display: block;
+                margin: 0 auto;
+                border-radius: 5px;
+                object-fit: cover;
+            }
+
+            table {
+                width: 100%;
+                margin-top: 20px;
+                border-collapse: collapse;
+            }
+
+            thead th, tbody td, tfoot td {
+                padding: 12px;
+                border: 1px solid #ccc;
+                text-align: left;
+            }
+
+            thead th, tfoot td {
+                background-color: #f9f9f9;
+                color: #333;
+            }
+            
+            tbody tr:nth-child(even){
+                background-color: #f1f1f1;
+            }
+
+            tbody tr:hover {
+                background-color: rgb(0, 119, 204);
+                color: #fff;
+            }
+
+            form {
+                max-width: 400px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #f9f9f9;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            fieldset input, textarea {
+                display: flex;
+                flex-direction: column;
+
+            }
+            
+            input[type="submit"] {
+                width: 15%;
+            }
+
+            
+
+            
+
+             
+
+
+
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Peri&oacute;dico Digital</h1>
+        </header>
+
+        <main>
+            <nav aria-label="Navegacion principal" class="barra_de_navegacion">
+                <ul>
+                    <a href="">Pol&iacute;tica</a>
+                    <a href="">Econom&iacute;a</a>
+                    <a href="">Ciencia</a>
+                    <a href="#contacto">Contacto</a>
+                </ul>
+            </nav>
+
+            <section>
+                <h2>Pol&iacute;tica</h2>
+                <article>
+                    <h3>Elecciones Presidenciales</h3>
+                    <p>
+                        Las Elecciones Presidenciales representan el pilar de la democracia, permitiendo a los ciudadanos elegir líderes que guíen la nación. Este proceso crucial refleja la voz colectiva, definiendo el rumbo político y social. La participación cívica en las elecciones fortalece la base de la gobernanza democrática.
+                    </p>
+                </article>
+                <article>
+                    <h3>Debate Parlamentario</h3>
+                    <p>
+                        El Debate Parlamentario es la esencia de la deliberación democrática, donde representantes electos discuten y deciden sobre políticas y leyes cruciales. En este foro, se exploran perspectivas diversas, se defienden posturas y se forjan compromisos. Los parlamentarios articulan preocupaciones ciudadanas, abordando desafíos nacionales. Este proceso fomenta la rendición de cuentas y la transparencia, esculpiendo la dirección de la nación. La habilidad para persuadir y colaborar es fundamental, delineando el futuro político. El debate parlamentario, arraigado en principios democráticos, encarna el diálogo constructivo necesario para una gobernanza efectiva y la representación auténtica de la voluntad del pueblo.
+                    </p>
+                    <figure>
+                        <img src="img.png" width="100" height="100" alt="Imagen de un documento">
+                        <figcaption>Firma en el Parlamento.</figcaption>
+                    </figure>
+                </article>
+            </section>
+
+            <section>
+                <h2>Econom&iacute;a</h2>
+                <article>
+                    <h3>Crecimiento Econ&oacute;mico</h3>
+                    <p>El Crecimiento Económico es el motor que impulsa el progreso de una sociedad, marcado por el aumento sostenido en la producción y el ingreso. A través de la innovación, inversión y eficiencia, las naciones prosperan, generando empleo y elevando el nivel de vida. Este fenómeno económico no solo fortalece la capacidad adquisitiva, sino que también brinda oportunidades para el desarrollo social y la inversión en infraestructuras. Un crecimiento económico robusto no solo es indicativo de salud financiera, sino también de la capacidad de una sociedad para enfrentar desafíos y mejorar la calidad de vida de sus ciudadanos. ¡Sigue más información en nuestro podcast!</p>
+                </article>
+                <article>
+                    <h3>Inversiones Internacionales</h3>
+                    <table>
+                        <thead>
+                            <th>Bonos</th>
+                            <th>&Iacute;ndices</th>
+                            <th>Letras</th>
+                            <th>Fondos</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>150 € mensuales</td>
+                                <td>120 € mensuales</td>
+                                <td colspan="2">100 € mensuales</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>5%</td>
+                                <td>2%</td>
+                                <td rowspan="2">-2.5%</td>
+                                <td rowspan="2">1.7%</td>
+                            </tr>
+                            <tr>
+                                <td>4%</td>
+                                <td>2%</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Bonos</td>
+                                <td>&Iacute;ndices</td>
+                                <td>Letras</td>
+                                <td>Fondos</td>
+                            </tr>
+                        </tfoot>
+
+                    </table>
+                </article>
+            </section>
+
+            <section>
+                <h2>Ciencia</h2>
+                <article>
+                    <h3>&Uacute;ltimos Descubrimientos</h3>
+                    <p>
+                        Los &Uacute;ltimos Descubrimientos desvelan el fascinante panorama de la innovación y el conocimiento. Desde avances cient&iacute;ficos hasta revelaciones arqueol&oacute;gicas, estos hallazgos ampl&iacute;an las fronteras de nuestra comprensi&oacute;n. La exploraci&oacute;n espacial, los avances m&eacute;dicos y las excavaciones arqueol&oacute;gicas revelan secretos del pasado y abren puertas a futuros inimaginables. Cada descubrimiento es un pilar que sostiene el edificio del progreso humano, desafiando nuestras percepciones y enriqueciendo nuestra comprensi&oacute;n del mundo que habitamos. Estos momentos transformadores son faros que gu&iacute;an el camino hacia un futuro lleno de posibilidades y conocimientos a&uacute;n inexplorados. ¿Qu&eacute; nos deparar&aacute; la ciencia?
+                    </p>
+                    <section class="contenedor_principal">
+                        <article>
+                            <h3>Biología</h3>
+                            <p>La Biología, ciencia de la vida, examina la complejidad fascinante de los organismos y su interacción con el entorno. Desde la estructura microscópica de las células hasta los intrincados ecosistemas, la Biología desentraña los misterios de la existencia. El estudio de la genética revela el código de la vida, mientras que la ecología explora las relaciones entre los seres vivos y su hábitat. La diversidad biológica, desde microorganismos hasta mamíferos, contribuye a la riqueza de nuestro planeta. La Biología, constantemente en evolución, no solo ilumina la naturaleza, sino que también inspira avances médicos y tecnológicos que moldean nuestro futuro.</p>
+                        </article>
+
+                        <article>
+                            <h3>Física</h3>
+                            <p>La Física, disciplina fundamental, analiza las leyes fundamentales que gobiernan el universo. Desde partículas subatómicas hasta galaxias distantes, la Física desentraña los misterios de la materia y la energía. Teorías como la relatividad y la mecánica cuántica han transformado nuestra comprensión del espacio y del tiempo. La Física aplicada impulsa avances tecnológicos, desde la electricidad hasta la exploración espacial. Las leyes universales de la Física no solo guían el funcionamiento del cosmos, sino que también inspiran la innovación y la resolución de problemas en diversas disciplinas. La Física es la esencia misma de la exploración y comprensión del universo.</p>
+                        </article>
+
+                        <article>
+                            <h3>Astronomía</h3>
+                            <p>La Física, disciplina fundamental, analiza las leyes fundamentales que gobiernan el universo. Desde partículas subatómicas hasta galaxias distantes, la Física desentraña los misterios de la materia y la energía. Teorías como la relatividad y la mecánica cuántica han transformado nuestra comprensión del espacio y del tiempo. La Física aplicada impulsa avances tecnológicos, desde la electricidad hasta la exploración espacial. Las leyes universales de la Física no solo guían el funcionamiento del cosmos, sino que también inspiran la innovación y la resolución de problemas en diversas disciplinas. La Física es la esencia misma de la exploración y comprensión del universo.</p>
+                        </article>
+                    </section>
+                </article>
+
+                <article>
+                    <h2>Exploración Espacial</h2>
+                    <p>La Exploración Espacial, hazaña humana extraordinaria, nos lleva más allá de las fronteras terrestres hacia el vasto desconocido del cosmos. Desde los primeros vuelos espaciales hasta las misiones a planetas distantes, cada expedición es un hito en nuestra búsqueda de comprender el universo. La Luna, Marte y más allá son destinos de interés, donde sondas y rovers recopilan datos cruciales. La cooperación internacional y la tecnología avanzada impulsan esta exploración, abriendo puertas a descubrimientos que desafían nuestras percepciones y prometen un futuro en el que la humanidad pueda alcanzar las estrellas.</p>
+                </article>
+            </section>
+
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <form method="post" action="#">
+                    <fieldset>
+                        <legend>Información de Contacto</legend>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required maxlength="50">
+
+                        <label for="correo_electronico">Correo Electrónico:</label>
+                        <input type="text" id="correo_electronico" name="correo_electronico" required>
+
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" maxlength="200"></textarea>
+
+                    </fieldset>
+                    
+                    <input type="submit" value="Enviar">
+
+                </form>
+                <footer>
+                    <p>Si está conforme escriba sí a nuestra dirección de email <a href="mailto:info@periodico.com">info@periodico.com.</a></p>
+                </footer>
+            </section>
+
+        </main>
+        <footer>
+            <p>© 2024 Periódico Digital. Todos los derechos reservados.</p>
+        </footer>
+    </body>
+</html>
