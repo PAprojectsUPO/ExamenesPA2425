@@ -3,183 +3,202 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title>Periódico Digital</title>
+        <link rel="icon" href="img.png" type="image/png">
+        <link rel="stylesheet" href="styles.css">
         <style>
+            /* Pseudo-elemento ::before en header para insertar un icono de periódico */
             header::before {
-                content: "\1F4F0";
-                font-size: 2rem;
-                position: absolute;
-                left: 20px;
-                top: 50%;
-                transform: translateY(-50%);
+                content: "\1F4F0"; /* Código Unicode del emoji de periódico */
+                font-size: 2rem; /* Tamaño del icono */
+                position: absolute; /* Posicionamiento absoluto respecto al header */
+                left: 20px; /* Distancia desde la izquierda */
+                top: 50%; /* Centra verticalmente al 50% */
+                transform: translateY(-50%); /* Ajusta verticalmente al centro */
             }
 
+            /* Estilos del encabezado principal */
             header {
-                background-color: rgb(0,119,204);
-                padding: 10px;
-                color: #fff;
-                text-align: center;
-                position: relative;
+                background-color: rgb(0,119,204); /* Color de fondo azul */
+                padding: 10px; /* Espaciado interno */
+                color: #fff; /* Texto en blanco */
+                text-align: center; /* Alineación del texto al centro */
+                position: relative; /* Contexto de posicionamiento para ::before */
             }
 
+            /* Estilos del cuerpo de la página */
             body {
-                margin: 20px;
-                background-color: #f9f9f9;
+                margin: 20px; /* Margen exterior de 20px en todos los lados */
+                background-color: #f9f9f9; /* Color de fondo gris claro */
             }
 
+            /* Barra de navegación principal */
             .barra_de_navegacion {
-                margin-bottom: 20px;
-                padding: 20px;
-                text-align: center;
-                background-color: #f9f9f9;
+                margin-bottom: 20px; /* Margen inferior para separar del contenido */
+                padding: 20px; /* Espaciado interno */
+                text-align: center; /* Alinea el contenido al centro */
+                background-color: #f9f9f9; /* Color de fondo gris claro */
             }
 
+            /* Lista desordenada de la barra de navegación */
             .barra_de_navegacion ul {
-                display: inline-flex;
-                list-style: none;
+                display: inline-flex; /* Flex inline para alinear horizontalmente */
+                list-style: none; /* Elimina los puntos de lista */
             }
 
+            /* Enlaces de navegación */
             .barra_de_navegacion a {
-                color: #333;
-                text-decoration: none;
-                padding: 8px 12px;
-                margin-right: 10px;
-                border-radius: 5px;
-                position: relative;
+                color: #333; /* Color de texto gris oscuro */
+                text-decoration: none; /* Elimina el subrayado de enlaces */
+                padding: 8px 12px; /* Espaciado interno */
+                margin-right: 10px; /* Margen a la derecha entre enlaces */
+                border-radius: 5px; /* Bordes redondeados */
+                position: relative; /* Contexto de posicionamiento para ::after */
             }
 
+            /* Efecto hover en la barra de navegación */
             .barra_de_navegacion :hover {
-                background-color: #f9f9f9;
-                color: rgb(0,119,204);
+                background-color: #f9f9f9; /* Mantiene el fondo al pasar el ratón */
+                color: rgb(0,119,204); /* Cambia el color del texto al azul */
             }
 
+            /* Pseudo-elemento ::after para crear línea debajo de enlaces */
             .barra_de_navegacion a::after {
-                content: "";
-                position: absolute;
-                width: 0;
-                height: 2px;
-                bottom: 0;
-                left: 0;
-                background-color: rgb(0, 119, 204);
+                content: ""; /* Contenido vacío para la línea */
+                position: absolute; /* Posicionamiento absoluto */
+                width: 0; /* Ancho inicial 0 */
+                height: 2px; /* Alto de la línea */
+                bottom: 0; /* Posicionado en la parte inferior */
+                left: 0; /* Posicionado a la izquierda */
+                background-color: rgb(0, 119, 204); /* Color azul de la línea */
             }
 
+            /* Animación del hover en la línea del enlace */
             .barra_de_navegacion a:hover::after {
-                width: 100%;
-                transition: width 0.3s ease;
+                width: 100%; /* Expande la línea al 100% en hover */
+                transition: width 0.3s ease; /* Transición suave de 0.3 segundos */
             }
 
+            /* Estilos para encabezados h2 y h3 */
             h2, h3 {
-                color: #333;
-                position: relative;
+                color: #333; /* Color de texto gris oscuro */
+                position: relative; /* Contexto de posicionamiento para ::after */
             }
 
-            h2::after, h3::after { /*selector que no sabia definir*/
-                content: "";
-                display: block;
-                width: 50px;
-                height: 3px;
-                background-color: rgb(0, 119, 204);
-                margin-top: 5px;
-                border-radius: 2px;
+            /* Pseudo-elemento ::after para línea decorativa bajo encabezados */
+            h2::after, h3::after {
+                content: ""; /* Contenido vacío para la línea */
+                display: block; /* Línea mostrada como bloque */
+                width: 50px; /* Ancho de la línea */
+                height: 3px; /* Alto de la línea */
+                background-color: rgb(0, 119, 204); /* Color azul de la línea */
+                margin-top: 5px; /* Separación superior de la línea */
+                border-radius: 2px; /* Bordes redondeados suaves */
             }
 
+            /* Estilos de secciones */
             section {
-                border-bottom: 2px solid #ccc;
+                border-bottom: 2px solid #ccc; /* Borde inferior gris para separación */
             }
 
+            /* Estilos de artículos */
             article {
-                background-color: #f9f9f9;
-                padding: 20px;
-                margin-bottom: 20px;
-                border: 1px solid #ccc;
-                border-radius: 5px;
+                background-color: #f9f9f9; /* Color de fondo gris claro */
+                padding: 20px; /* Espaciado interno */
+                margin-bottom: 20px; /* Margen inferior para separar artículos */
+                border: 1px solid #ccc; /* Borde gris claro alrededor del artículo */
+                border-radius: 5px; /* Bordes redondeados */
             }
 
+            /* Contenedor principal con layout de grid en 3 columnas */
             .contenedor_principal {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                gap: 20px;
-                border-bottom: none;
+                display: grid; /* Usa CSS Grid para layout */
+                grid-template-columns: 1fr 1fr 1fr; /* 3 columnas de igual tamaño */
+                gap: 20px; /* Espacio entre elementos de la grid */
+                border-bottom: none; /* Elimina el borde inferior */
             }
 
+            /* Artículos dentro del contenedor principal */
             .contenedor_principal article{
-                border: none;
+                border: none; /* Elimina el borde de los artículos */
             }
 
+            /* Encabezados h3 dentro del contenedor principal */
             .contenedor_principal h3{
-                color: rgb(0, 119, 204);
+                color: rgb(0, 119, 204); /* Color azul para los encabezados */
             }
 
+            /* Párrafos dentro del contenedor principal */
             .contenedor_principal p {
-                line-height: 1.5;
-                justify-content: center;
+                line-height: 1.5; /* Altura de línea para mejor legibilidad */
+                justify-content: center; /* Centra el contenido */
             }
 
+            /* Contenedor de figuras con alineación centrada */
             figure {
-                text-align: center;
-                margin-top: 20px 0;
+                text-align: center; /* Alinea el contenido al centro */
+                margin-top: 20px 0; /* Margen superior e inferior de 20px */
             }
 
+            /* Estilos para imágenes */
             img {
-                max-width: 100%;
-                display: block;
-                margin: 0 auto;
-                border-radius: 5px;
-                object-fit: cover;
+                max-width: 100%; /* Ancho máximo del 100% del contenedor */
+                display: block; /* Se muestra como bloque */
+                margin: 0 auto; /* Margen automático para centrar */
+                border-radius: 5px; /* Bordes redondeados */
+                object-fit: cover; /* Ajusta la imagen al contenedor */
             }
 
+            /* Estilos de tabla */
             table {
-                width: 100%;
-                margin-top: 20px;
-                border-collapse: collapse;
+                width: 100%; /* Ancho completo del contenedor */
+                margin-top: 20px; /* Margen superior */
+                border-collapse: collapse; /* Combina bordes adyacentes */
             }
 
+            /* Estilos para celdas de encabezado y cuerpo de tabla */
             thead th, tbody td, tfoot td {
-                padding: 12px;
-                border: 1px solid #ccc;
-                text-align: left;
+                padding: 12px; /* Espaciado interno de celdas */
+                border: 1px solid #ccc; /* Borde gris claro */
+                text-align: left; /* Alineación de texto a la izquierda */
             }
 
+            /* Estilos para encabezados y pie de tabla */
             thead th, tfoot td {
-                background-color: #f9f9f9;
-                color: #333;
+                background-color: #f9f9f9; /* Color de fondo gris claro */
+                color: #333; /* Color de texto gris oscuro */
             }
             
+            /* Estilos para filas pares del cuerpo */
             tbody tr:nth-child(even){
-                background-color: #f1f1f1;
+                background-color: #f1f1f1; /* Color gris más claro para filas pares */
             }
 
+            /* Efecto hover en filas de tabla */
             tbody tr:hover {
-                background-color: rgb(0, 119, 204);
-                color: #fff;
+                background-color: rgb(0, 119, 204); /* Color azul al pasar el ratón */
+                color: #fff; /* Texto blanco al pasar el ratón */
             }
 
+            /* Estilos del formulario */
             form {
-                max-width: 400px;
-                margin: 0 auto;
-                padding: 20px;
-                background-color: #f9f9f9;
-                border: 1px solid #ccc;
-                border-radius: 5px;
+                max-width: 400px; /* Ancho máximo del formulario */
+                margin: 0 auto; /* Centra el formulario horizontalmente */
+                padding: 20px; /* Espaciado interno */
+                background-color: #f9f9f9; /* Color de fondo gris claro */
+                border: 1px solid #ccc; /* Borde gris claro */
+                border-radius: 5px; /* Bordes redondeados */
             }
 
+            /* Estilos para inputs y textarea dentro del fieldset */
             fieldset input, textarea {
-                display: flex;
-                flex-direction: column;
-
+                display: flex; /* Usa flexbox para alineación */
+                flex-direction: column; /* Elementos apilados verticalmente */
             }
             
             input[type="submit"] {
-                width: 15%;
+                width: 25%; /* Ancho del botón de envío */
             }
-
-            
-
-            
-
              
-
-
-
 
         </style>
     </head>
@@ -191,14 +210,14 @@
         <main>
             <nav aria-label="Navegacion principal" class="barra_de_navegacion">
                 <ul>
-                    <a href="">Pol&iacute;tica</a>
-                    <a href="">Econom&iacute;a</a>
-                    <a href="">Ciencia</a>
+                    <a href="#politica">Pol&iacute;tica</a>
+                    <a href="#economia">Econom&iacute;a</a>
+                    <a href="#ciencia">Ciencia</a>
                     <a href="#contacto">Contacto</a>
                 </ul>
             </nav>
 
-            <section>
+            <section id="politica">
                 <h2>Pol&iacute;tica</h2>
                 <article>
                     <h3>Elecciones Presidenciales</h3>
@@ -218,7 +237,7 @@
                 </article>
             </section>
 
-            <section>
+            <section id="economia">
                 <h2>Econom&iacute;a</h2>
                 <article>
                     <h3>Crecimiento Econ&oacute;mico</h3>
@@ -264,7 +283,7 @@
                 </article>
             </section>
 
-            <section>
+            <section id="ciencia">
                 <h2>Ciencia</h2>
                 <article>
                     <h3>&Uacute;ltimos Descubrimientos</h3>
